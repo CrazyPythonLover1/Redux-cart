@@ -9,8 +9,8 @@ const Cart = (props) => {
             <h4> This is Cart </h4>
             <ul>
                 {
-                    cart.map(id=><li key={id}> {id} <button
-                    onClick={()=>removeFromCart(id)}
+                    cart.map(pd=><li key={pd.cartId}> {pd.name} <button
+                    onClick={()=>removeFromCart(pd.cartId)}
                     >X</button></li>)
                 }
             </ul>
